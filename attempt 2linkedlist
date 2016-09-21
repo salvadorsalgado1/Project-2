@@ -1,0 +1,58 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package node;
+
+/**
+ *
+ * @author Student-HSLH133
+ */
+public class Node {
+
+   private int value;
+   private Node next;
+   
+   
+   public Node()
+   {      
+       value = 0;
+       next = null;       
+   }
+   
+   public Node(int newValue)
+   {      
+       value = newValue;       
+   }   
+   public Node(int newValue, Node newNext)
+   {
+       value = newValue;
+       next = newNext;    
+   }
+      
+   public int getValue()
+   {       
+       return value;      
+   }
+   
+   public Node getNext()
+   {            
+      return next;       
+   }
+   public void setValue(int newValue)
+   {
+       value = newValue;
+   }
+   public void setNext(Node newNext)
+   {
+       next = newNext;
+   }
+ 
+   public static void main(String[] args) {
+      LinkedString list = new LinkedString();
+    
+       
+    }
+    
+}
