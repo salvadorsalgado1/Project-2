@@ -1,58 +1,99 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package node;
 
+
+package node;
+import java.util.*;
 /**
  *
  * @author Student-HSLH133
  */
-public class Node {
-
-   private int value;
-   private Node next;
-   
-   
-   public Node()
-   {      
-       value = 0;
-       next = null;       
-   }
-   
-   public Node(int newValue)
-   {      
-       value = newValue;       
-   }   
-   public Node(int newValue, Node newNext)
-   {
-       value = newValue;
-       next = newNext;    
-   }
-      
-   public int getValue()
-   {       
-       return value;      
-   }
-   
-   public Node getNext()
-   {            
-      return next;       
-   }
-   public void setValue(int newValue)
-   {
-       value = newValue;
-   }
-   public void setNext(Node newNext)
-   {
-       next = newNext;
-   }
- 
-   public static void main(String[] args) {
-      LinkedString list = new LinkedString();
+public class LinkedString {
+// add this somewhere curr = curr.next();
+ Scanner input = new Scanner(System.in);
     
-       
+    public static LinkedList list;
+ 
+    private Node head;
+    
+    private int length;
+    
+  
+    
+    public static void main(String[] args) {
+
+        //list.add(itemOne);
+        list.add("1");
+ list.add("2");
+      
+ LinkedList list = new LinkedList();
+   System.out.print("Hello");
+ 
+   
     }
+   
+     public LinkedString()
+    {
+        head = null;
+        length = 0;
+        
+        //Empty linked list looks like this ^.
+    
+    }
+     public LinkedString(int value)
+    {
+      String itemOne = input.next();
+        list.add(itemOne);
+        //value is taken from the user input.
+        //to establish linked list, 
+
+    }
+     public LinkedString(char[] value)
+     {
+         //Allocates a new character linked list so that it represents the 
+         //sequence of characters currently contained in the character
+         //array argument.
+         
+     }
+     public LinkedString (String original)
+     {
+         //Initializes a new character linked list so that it
+         //represents the same sequence of characters as the argument.
+         
+     }
+     public char charAt (int index)
+     {
+         //REturns the char value at the specific index.
+         //The first character in the linked character string 
+         //is in position zero.
+         return 1;
+     }
+    public LinkedString concat (LinkedString str)
+     {
+         //Concatenates the specified linked character string to the end
+         //of this linked character string.
+         return str;
+         
+     }
+    public boolean isEmpty()
+    {
+        if (length()==0)
+        return true;
+        else 
+            return false;
+    }
+    
+    public int length()
+     {
+         //returns the length of this linked character string.
+         return length;
+     }
+//    public LinkedString substring (int beginIndex, int endIndex)
+//     {
+    //Returns a new linked character string that
+    //is a substring of this linked character string.
+//         return ;
+//         
+//     }
+
+    
     
 }
