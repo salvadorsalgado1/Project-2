@@ -1,11 +1,10 @@
-
-
 package node;
 import java.util.*;
 /**
  *
  * @author Student-HSLH133
  */
+
 public class LinkedString {
 // add this somewhere curr = curr.next();
  Scanner input = new Scanner(System.in);
@@ -13,63 +12,84 @@ public class LinkedString {
     public static LinkedList list;
  
     private Node head;
-    
     private int length;
-    
-  
+
+//  int beginIndex;
+//  int endIndex;
     
     public static void main(String[] args) {
 
-        //list.add(itemOne);
-        list.add("1");
- list.add("2");
-      
- LinkedList list = new LinkedList();
-   System.out.print("Hello");
- 
-    
     }
-   
+  
      public LinkedString()
     {
         head = null;
         length = 0;
-        
-        //Empty linked list looks like this ^.
-    
+     
+        System.out.print("H");
+         
+//Empty linked list looks like this ^.
     }
+     
      public LinkedString(int value)
     {
-      String itemOne = input.next();
-        list.add(itemOne);
         //value is taken from the user input.
-        //to establish linked list, 
-
+        //to establish linked list,    
+        
     }
+    
+     
      public LinkedString(char[] value)
      {
          //Allocates a new character linked list so that it represents the 
          //sequence of characters currently contained in the character
          //array argument.
          
+        //
+        //Must take characters from char[] array.
+         //create a linked linked list from 5 nodes ex. H E L L O.
+         // H = value, and so on.
+         //We would use a "for loop". for (int i = 0; i<original.length; i++)
+         //                               System.out.print(value[i]);
+         //              Prints out every value in that array.
+         // We would create a node that has the reference value to the haed variable. 
+         //head -> H.
+         //repeat the process creating a new node that contains character e. 
+      // e would be called newNode.
+         
      }
      public LinkedString (String original)
      {
          //Initializes a new character linked list so that it
          //represents the same sequence of characters as the argument.
+          
+// Print a string using a "for loop"
+         // for (int i= 0 i<original.length(), i++)
+         // System.out.print(original.charAt(i))
          
+
+        // 
      }
      public char charAt (int index)
      {
          //REturns the char value at the specific index.
          //The first character in the linked character string 
          //is in position zero.
+         //s1 contains head string "H E L L O". Points to the first node.
+         //System.out.print( si.charAt(3) ); prints out 3rd lower case "l".
+         
+         
+        
          return 1;
      }
     public LinkedString concat (LinkedString str)
      {
          //Concatenates the specified linked character string to the end
          //of this linked character string.
+         //Takes the nodes and concats them. 
+         // whatever nodes are in the current linked the linked string it reutrns the memory address of the head. 
+         // as a reference .
+         // 
          return str;
          
      }
@@ -88,9 +108,10 @@ public class LinkedString {
      }
 //    public LinkedString substring (int beginIndex, int endIndex)
 //     {
-    //Returns a new linked character string that
-    //is a substring of this linked character string.
-//         return ;
+////    Returns a new linked character string that
+////    is a substring of this linked character string.
+//         // takes a beginning index and ending and returns a portion of
+    // an ending string.
 //         
 //     }
 
