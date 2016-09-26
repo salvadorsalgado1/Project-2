@@ -27,7 +27,7 @@ public class LinkedString {
  LinkedList list = new LinkedList();
    System.out.print("Hello");
  
-   
+    
     }
    
      public LinkedString()
