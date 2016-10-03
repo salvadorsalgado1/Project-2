@@ -1,0 +1,49 @@
+package node;
+
+/**
+ *
+ * @author Student-HSLH133
+ */
+public class Node {
+ 
+   int value;
+   Node head;
+Node curr;
+   private int item;
+
+   public Node()
+   {      
+       value = 0;
+      head = null;  
+   }
+   
+   public Node(int newValue)
+   {      
+       value = newValue;       
+   }   
+   public Node(int newValue, Node newHead)
+   {
+       value = newValue;
+       head = newHead;    
+   }
+      
+   public int getValue()
+   {       
+       return value;      
+   }
+   
+   public Node getHead()
+   {            
+      return head;       
+   }
+   public void setValue(int newValue)
+   {
+       value = newValue;
+   }
+   public void setHead(Node newHead)
+   {
+       head = newHead;
+   }
+      
+   LinkedString list = new LinkedString();
+}
