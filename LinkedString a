@@ -1,0 +1,237 @@
+package node;
+import java.util.*;
+/**
+ *
+ * @author Student-HSLH133
+ */
+
+public class LinkedString {
+
+ Scanner input = new Scanner(System.in);
+    
+    public static LinkedList list;
+ private Node curr;
+    private Node head;
+    private int length;
+String original;
+  int beginIndex;
+  int endIndex;
+    private int numlength;
+  LinkedString str;
+    
+    public static void main(String[] args) {
+        
+    }
+ 
+     public LinkedString()
+    {
+       head = null;
+        length = 0;
+     
+        //System.out.print("H");
+         
+//Empty linked list looks like this ^.
+    }
+     public void display(Node head)
+     {
+         if (head == null)
+         {
+             return;
+         }
+         Node curr = head;
+        
+         while (curr != null);
+         {
+             System.out.print(curr.value + "-");
+             curr = curr.head;
+         }
+         System.out.print(curr);
+     }
+     
+     public LinkedString(int value)
+    {
+    
+     numlength = 0;
+     for (int i = 0; i < str.length; i++)
+     {
+         
+         if (head == null)
+         {
+             
+             length++;
+         }
+     }
+        // original. = 5;
+//value is taken from the user input.
+        //to establish linked list,  
+        //list.add("a");
+        
+    }
+  
+      public void add(int value)
+  {
+      Node n = new Node(value);
+      Node curr = head;
+      while(curr.getHead() != null)
+      {
+          curr=curr.getHead();
+      }
+              curr.setHead(n);
+      length++;     
+  }
+  
+  public void add(int value, int index)
+  {
+
+if (index >= 0 && index < length+1)
+{
+    if (index == 0 )
+    {
+        Node newNode = new Node (value, head);
+        head = newNode;       
+    }
+    else
+    {
+        //Node prev = fi(index-1);
+        Node newNode = new Node(value,curr.head);
+        curr.head = newNode;
+    }
+    length++;
+  
+}
+  }
+     public LinkedString(char[] value)
+     {
+         //Allocates a new character linked list so that it represents the 
+         //sequence of characters currently contained in the character
+         //array argument.
+         if (value.length == 0)
+         return;
+             Node node = new Node(value[0]);
+         head = node;
+         length++;
+                 Node curr = head;
+                 for (int index = 1; index < value.length; index++)
+                 {
+                     node = new Node(value[index]);
+                     curr.head = node;
+                     curr = curr.head;
+                     length++;
+                 }
+        //
+        //Must take characters from char[] array.
+         //create a linked linked list from 5 nodes ex. H E L L O.
+         // H = value, and so on.
+         //We would use a "for loop". for (int i = 0; i<original.length; i++)
+         //                               System.out.print(value[i]);
+         //              Prints out every value in that array.
+         // We would create a node that has the reference value to the haed variable. 
+         //head -> H.
+         //repeat the process creating a new node that contains character e. 
+      // e would be called newNode.
+     for (int i = 0; i<original.length(); i++)
+         System.out.print(value[i]);
+     
+     }
+     
+     
+     public LinkedString (String original)
+     {
+         //Initializes a new character linked list so that it
+         //represents the same sequence of characters as the argument.
+         
+// Print a string using a "for loop"
+         // for (int i= 0 i<original.length(), i++)
+        
+             // System.out.print(original.charAt(i));
+       
+if (original.length()==0)
+{
+    return;
+}
+Node Node = new Node(original.charAt(0));
+head = Node;
+System.out.print(original);
+length++;
+     }
+     
+     public char charAt (int index, Node head)
+     {
+         //REturns the char value at the specific index.
+         //The first character in the linked character string 
+         //is in position zero.
+         //s1 contains head string "H E L L O". Points to the first node.
+         //System.out.print( si.charAt(3) ); prints out 3rd lower case "l".
+         index = 0;
+         Node curr = head;
+         for ( index = 0; index < length ; index++)
+         
+             if (index == index)
+             
+                 return 2;
+                 
+             else curr = curr.getHead();
+   return 1;
+     }
+    public void concat (LinkedString str)
+     {
+        //Concatenates the specified linked character string to the end
+         //of this linked character string.
+         //Takes the nodes and concats them. 
+         // whatever nodes are in the current linked the linked string it reutrns the memory address of the head. 
+         // as a reference .
+         // 
+        curr= str.head;
+        curr = str.curr;
+        length = length + str.numlength;
+       Node curr = head;
+       
+       while (curr.getHead() != null)
+       {
+           
+       }
+         
+     }
+    
+    public boolean isEmpty()
+    {
+      if (head == null)
+      {
+          return true;
+      }
+      else 
+      {
+          return false;
+      }
+    
+    
+    }
+    
+    public int length(Node head)
+     {
+         if (head == null)
+         {
+             return 0;
+         }
+         int length = 0;
+         Node curr = head;
+         while (curr != null)
+         {
+             
+             length++;
+             curr= curr.head;
+         }
+         //returns the length of this linked character string.
+         return numlength;
+     }
+//    public LinkedString substring (int beginIndex, int endIndex)
+//     {
+////    Returns a new linked character string that
+////    is a substring of this linked character string.
+//         // takes a beginning index and ending and returns a portion of
+    // an ending string.
+//         
+//     }
+
+    
+}
