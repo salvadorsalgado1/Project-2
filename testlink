@@ -1,12 +1,48 @@
 
 package node;
 
-/**
- * @author Student-HSLH133
- */
 
-public class TestString {
+
+
+/**
+ *
+ * @author Salvador
+ */
+public class TestingLink {
+
+    public static LinkedString list;
+
+    public static void main(String [] args)
+    {
+           LinkedString  list = new LinkedString();
+          
+       //list.add(1);
+        
+        Node head = new Node (1);
+      Node second = new Node(2);
+      Node third = new Node(3);
+      Node fourth = new Node(4);
+     head.head = head;
+      head.head = second;
+      second.head = third;
+      third.head = fourth;
+      
+        //System.out.print(list);
+       
+     
+        
+          System.out.print("Items in the list: " + list.length(head));
+   System.out.print(head);
+     
+     //  System.out.print(concat);
+       
+      
+    }
+
     
-    
+
+   
+
     
 }
+ 
